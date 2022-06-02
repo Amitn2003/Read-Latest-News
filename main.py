@@ -29,9 +29,9 @@ topiccccc = "business" if choice == 1 else "entertainment" if choice == 2 else "
 
 
 if topiccccc == "none":
-    url = 'https://newsapi.org/v2/top-headlines?country=in&apiKey=549ccbe3026540cda1c2e7011b86aa83'
+    url = 'https://newsapi.org/v2/top-headlines?country=in&apiKey={API_KEY}'
 else:
-    url = f'https://newsapi.org/v2/top-headlines?country=in&category={topiccccc}&apiKey=549ccbe3026540cda1c2e7011b86aa83'
+    url = f'https://newsapi.org/v2/top-headlines?country=in&category={topiccccc}&apiKey={API_KEY}'
     print(f"Reading best {topiccccc} news for you...")
 
 
