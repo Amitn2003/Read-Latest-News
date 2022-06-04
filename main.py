@@ -18,12 +18,15 @@ def topic_num(no):
         return "sports"
     elif(no==6):
         return "technology"
+    elif(no==0):
+        return None
     else:
+        print(f"Kindly check your input - {choice}\n")
         return None
 
 
-print("Choose the topic of the news.\n 1. Business \n 2. Entertainment \n 3. Health \n 4. Science \n 5. Sports \n 6. Technology \n 00. For all")
-choice = int(input("Enter your choice: "))
+print("Choose the topic of the news.\n 1. Business \n 2. Entertainment \n 3. Health \n 4. Science \n 5. Sports \n 6. Technology \n 0. For all")
+choice = int(input("Enter your choice: ") or 0)
 
 topiccccc = "business" if choice == 1 else "entertainment" if choice == 2 else "health" if choice == 3 else "science" if choice == 4 else "sports" if choice == 5 else "technology" if choice == 6 else "none" 
 
